@@ -1,18 +1,18 @@
-1| Two rule-based methods to convert dependency structure into phrase structure are presented by Covington [14] and Collins et al.
-1| Covington [14] and Collins et al. [13] use three simple rules with the help of X-bar theory and convert the dependency structure into phrase structure.
-1| The dependents in the method of Collins et al. [13] project only one level; hence, the dependents of a head are in the same level.
-2| We used the two-letter tag method proposed by Collins et al. [11] to integrate a family of POS tags to a CPOS.
+1| Two rule-based methods to convert dependency structure into phrase structure are presented by Covington and Collins et al.
+1| Covington and Collins et al. use three simple rules with the help of X-bar theory and convert the dependency structure into phrase structure.
+1| The dependents in the method of Collins et al.  project only one level; hence, the dependents of a head are in the same level.
+2| We used the two-letter tag method proposed by Collins et al. to integrate a family of POS tags to a CPOS.
 3| Previous work on treebank conversion primarily focuses on converting one grammar formalism of a treebank into another and then conducting a study on the converted treebank (Collins et al., 1999; Xia et al., 2008).
 4| The coarse morphological tag provided by Czech two-letter coarse morphological tag, as described in (Collins et al., 1999), The first letter is the main POS (12 possible values), the second letter is either the morphological case field if the main POS displays case (i.e. for nouns, adjectives, pronouns, numerals and prepositions; 7 possible values), or the detailed POS if it does not (22 possible values).
 5| Dependency-based representations have become increasingly popular in syntactic parsing, especially for languages that exhibit free or flexible word order, such as Czech [7], Bulgarian [15], Turkish [14] and Russian [4].
-6| For example, for constituent (phrase-structure) syntactic parsing [Charniak 2000; Collins 1999; Petrov et al. 2006] of Chinese, besides the most popular treebank, Penn Chinese Treebank (CTB) [Xue et al. 2002], there are other treebanks such as Tsinghua Chinese Treebank (TCT) [Zhou 1996] and Peking Chinese Treebank.
+6| For example, for constituent (phrase-structure) syntactic parsing [Charniak 2000; Collins 1999; Petrov et al. 2006] of Chinese, besides the most popular treebank, Penn Chinese Treebank (CTB) [Xue et al. 2002], there are other treebanks such as Tsinghua Chinese Treebank (TCT) and Peking Chinese Treebank.
 6| Algorithm 2 presents the extended version of the decoding algorithm used in the Collins parser, what the algorithm needs to do is to generate edges for each span.
 6| One type focuses on converting treebanks of different grammar formalisms. Collins et al. [1999] addressed constituent syntactic parsing on Czech using a treebank converted from a Prague dependency treebank.
-7| Much work has been done on the use of morphological features for parsing of morphologically rich languages. Collins et al. (1999) report that an optimal tagset for parsing Czech consists of a basic POS tag plus a CASE feature (when applicable).
+7| Collins et al. (1999) report that an optimal tagset for parsing Czech consists of a basic POS tag plus a CASE feature (when applicable).
 8| Subsequently, researchers have begun to look at both porting these parsers to new domains (Gildea, 2001; McClosky et al., 2006; Petrov et al., 2010) and constructing parsers for new languages (Collins et al., 1999; Buchholz and Marsi, 2006; Nivre et al., 2007).
 9| By comparison, the case feature improved parsing for Czech (Collins et al., 1999) and the combination of the number feature for adjectives and mode feature for verbs improved results for Spanish (Cowan and Collins, 2005).
 10| For Czech, the adaptation by Collins et al. (1999) culminated in an 80 F1-score.
-11| Much work has been done on the use of morphological features for parsing of morphologically rich languages. Collins et al. (1999) report that an optimal tagset for parsing Czech consists of a basic POS tag plus a CASE feature (when applicable).
+11| Collins et al. (1999) report that an optimal tagset for parsing Czech consists of a basic POS tag plus a CASE feature (when applicable).
 12| For example, Collins et al. (1999) adapted Collins' parser to Czech, a highly- inflected language.
 13| Explanations for this phenomenon have included the relative informativeness of lexicalization (Dubey and Keller, 2003; Arun and Keller, 2005), insensitivity to morphology (Cowan and Collins, 2005; Tsarfaty and Sima'an, 2008), and the effect of variable word order (Collins et al., 1999).
 14| There have been some work (Collins et al., 1999b; Xia and Palmer, 2001) about converting dependency structures to phrase structures.
@@ -32,7 +32,7 @@
 23| Currently it is dominant that using data-driven approaches to learn parsers automatically from experience, such as probabilistic generative models [3], generative probabilistic parsing models [2] and deterministic discriminative model [7] and so on.
 24| The two of them which are most conspicuous, and identified as most problematic, e.g., in (Collins et al., 1999), are rich nominal inflection (§2.1) and free word order (§2.6).
 25| This two-dimensional parametrization has been instrumental in devising parsing models that improve disambiguation capabilities for English as well as other languages, such as German (Dubey and Keller, 2003) Czech (Collins et al., 1999) and Chinese (Bikel and Chiang, 2000).
-26| The increasing availability of multi-format treebanks (e.g.(Bick, 2006)) and the automatic conversion from some formats to others, e.g. (Collins et al, 1999; Bahgat Shehata and Zanzotto, 2006), are attempts to overcome this problem.
+26| The increasing availability of multi-format treebanks  and the automatic conversion from some formats to others, e.g. (Collins et al, 1999; Bahgat Shehata and Zanzotto, 2006), are attempts to overcome this problem.
 26| For instance, the availability of parallel annotations, and among them one in Penn format, can be of some aid in investigating the irreproducibility of the state-of-the-art results on tree- banks or languages other than Penn and English, as empirically demonstrated by, e.g., (Collins et al, 1999) on Czech, (Dubey and Keller, 2003) on German, (Corazza et al, 2004) on Italian.
 26| The output of this first step includes compact tags where features are expressed by short strings, like in (Collins et al, 1999).
 27| Other parsers with high accuracy reported on PDT 2.0 use feature extraction as well [4,5].
@@ -89,4 +89,4 @@
 57| Algorithm 2, as adopted by Collins and his colleagues [2] when they converted the Czech dependency Treebank [6] into a phrase- structure Treebank, produces phrase structures that are as flat as possible.
 58| the sentences from CNC are preprocessed by a dependency-based modification of Collins et al.'s (1999) automatic parser (with a success rate of about 80%), followed by a manual tagging procedure that is supported by a special user-friendly software tool that enables the annotators to work with (i.e. modify) the automatically derived graphic representations of the trees;
 59| For a detailed descriptions see Haji6 (1998), Hladkfi (2000) and Collins, Haji6, Ram~haw, Tillmann (1999).
-59| We use the statistical Collins's parser to create the stnlcture of the tree and then a statistical procedure to assign words their syntactic functions.
+59| We use the statistical Collins's parser to create the structure of the tree and then a statistical procedure to assign words their syntactic functions.
