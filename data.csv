@@ -36,7 +36,7 @@
 26| For instance, the availability of parallel annotations, and among them one in Penn format, can be of some aid in investigating the irreproducibility of the state-of-the-art results on tree- banks or languages other than Penn and English, as empirically demonstrated by, e.g., (Collins et al, 1999) on Czech, (Dubey and Keller, 2003) on German, (Corazza et al, 2004) on Italian.
 26| The output of this first step includes compact tags where features are expressed by short strings, like in (Collins et al, 1999).
 27| Other parsers with high accuracy reported on PDT 2.0 use feature extraction as well [4,5].
-27| DECT. Individual positions of the 15-letter tags as individual features. Original MST parser uses only 2-letter tags proposed by [5].
+27| Original MST parser uses only 2-letter tags proposed by [5].
 27| We have described the feature templates and we have shown that when we are able to train over a large feature space, the addition of full 15-letters morphological tags for Czech outperforms the 2-letters tags commonly used since [5].
 28| COL. Collins's parser adapted for PDT [4].
 29| This two-dimensional parametrization2 was shown to improve parsing accuracy for English [4, 1] as well as other languages, e.g., German [7] Czech [5] and Chinese [2].
@@ -72,7 +72,7 @@
 44| The trees are then transformed into Penn Treebank style constituencies using the technique described in (Collins et al., 1999).
 44| Although the results presented in (Collins et al., 1999) used the reordering technique, we have experimented with his parser using the governor-raising technique and observe an increase in dependency accuracy.
 44| a subset of the morphological tag as described in (Collins et al., 1999)
-45| First, Czech is a “highly inflected” language: the role of function words in the Germanic and Romance languages is typically filled by suffixes in Czech. Second, Czech exhibits a “relatively free word order” [7].
+45| Second, Czech exhibits a “relatively free word order” [7].
 46| From the resulting (noisy) dependency treebank, a dependency parser is trained using the techniques of (Collins, 1999).
 47| Unlabeled attachment score (UAS): The proportion of words that are assigned the correct head (or no head if the word is a root) (Eisner, 1996; Collins et al., 1999).
 48| This development has fueled interest in proting the parsing technologies developed for English and the Penn treebank format to other languages and representation formats(Collins et al., 1999; Debey and Leller, 2003)
